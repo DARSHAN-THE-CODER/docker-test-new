@@ -8,6 +8,6 @@ services:
     depends_on:
       - backend
   backend:
-    build: reachdarshanv/dockertest:backend
+    image: reachdarshanv/dockertest:backend
     ports:
       - 5000:5000
