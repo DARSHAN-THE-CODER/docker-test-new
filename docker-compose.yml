@@ -2,12 +2,12 @@ version: '1'
 
 services:
   client:
-    build: ./client
+    image: reachdarshanv/dockertest:client
     ports:
       - 3000:3000
     depends_on:
       - backend
   backend:
-    build: ./backend
+    build: reachdarshanv/dockertest:backend
     ports:
       - 5000:5000
