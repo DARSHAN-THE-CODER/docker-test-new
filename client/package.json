@@ -41,5 +41,6 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
-  }
+  },
+  "proxy": "http://backend-service:5000"
 }

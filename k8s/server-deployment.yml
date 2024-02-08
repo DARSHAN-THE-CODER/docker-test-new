@@ -16,4 +16,5 @@ spec:
         - name: backend
           image: reachdarshanv/dockertest:backend
           ports:
-            - containerPort: 5000
+            - name: http
+              containerPort: 5000
