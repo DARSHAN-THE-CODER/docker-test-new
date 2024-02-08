@@ -3,13 +3,13 @@ pipeline {
 
     stages {
         stage("build"){
-            echo "Building ..."
+            sh ./jenkins/build.sh
         }
         stage("test"){
-            echo "Testing ..."
+            sh ./jenkins/test.sh
         }
         stage("deploy"){
-            echo "Deploying ..."
+            sh ./jenkins/deploy.sh
         }
     }
 }
