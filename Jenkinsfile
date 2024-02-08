@@ -14,14 +14,14 @@ pipeline {
             steps {
                 // cd jenkins
                 // ls
-                shell "chmod +x ./jenkins/test.sh"
-                shell "./jenkins/test.sh"
+                sh "chmod +x ./jenkins/test.sh"
+                sh "./jenkins/test.sh"
             }
         }
         stage("deploy"){
             steps {
-                shell 'chmod +x ./jenkins/deploy.sh'
-                shell './jenkins/deploy.sh'
+                sh 'chmod +x ./jenkins/deploy.sh'
+                sh './jenkins/deploy.sh'
             }
         }
     }
