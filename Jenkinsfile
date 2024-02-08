@@ -6,22 +6,22 @@ pipeline {
             steps {
                 echo "heyy "
                 // ls
-                sh "chmod +x ./jenkins/build.sh"
-                sh "./jenkins/build.sh"
+                sh "chmod +x general.sh"
+                sh "./general.sh Build"
             }
         }
         stage("test"){
             steps {
                 // cd jenkins
                 // ls
-                sh "chmod +x ./jenkins/test.sh"
-                sh "./jenkins/test.sh"
+                sh "chmod +x general.sh"
+                sh "./general.sh Test"
             }
         }
         stage("deploy"){
             steps {
-                sh 'chmod +x ./jenkins/deploy.sh'
-                sh './jenkins/deploy.sh'
+                sh "chmod +x general.sh"
+                sh "./general.sh Deploy"
             }
         }
     }
