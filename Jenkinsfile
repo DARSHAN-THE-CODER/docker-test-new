@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage("build"){
             steps {
-                bash 'chmod +x ./jenkins/build.sh'
-                bash './jenkins/build.sh'
+                shell 'chmod +x ./jenkins/build.sh'
+                shell './jenkins/build.sh'
             }
         }
         stage("test"){
             steps {
-                bash 'chmod +x ./jenkins/test.sh'
-                bash './jenkins/test.sh'
+                shell 'chmod +x ./jenkins/test.sh'
+                shell './jenkins/test.sh'
             }
         }
         stage("deploy"){
             steps {
-                bash 'chmod +x ./jenkins/deploy.sh'
-                bash './jenkins/deploy.sh'
+                shell 'chmod +x ./jenkins/deploy.sh'
+                shell './jenkins/deploy.sh'
             }
         }
     }
