@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo "heyy "
                 // ls
-                shell "chmod +x ./jenkins/build.sh"
-                shell "./jenkins/build.sh"
+                sh "chmod +x ./jenkins/build.sh"
+                sh "./jenkins/build.sh"
             }
         }
         stage("test"){
