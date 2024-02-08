@@ -3,19 +3,19 @@ pipeline {
 
     stages {
         stage("build"){
-            steps{
+            steps {
                 chmod +x './jenkins/build.sh'
                 sh './jenkins/build.sh'
             }
         }
         stage("test"){
-            steps{
+            steps {
                 chmod +x './jenkins/test.sh'
                 sh './jenkins/test.sh'
             }
         }
         stage("deploy"){
-            steps{
+            steps {
                 chmod +x './jenkins/deploy.sh'
                 sh './jenkins/deploy.sh'
             }
