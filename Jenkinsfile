@@ -10,6 +10,11 @@ pipeline {
                 sh "./general.sh Build"
             }
         }
+        stage("test1"){
+            steps {
+                echo "testt "
+            }
+        }
         stage("test"){
             steps {
                 // cd jenkins
