@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage("build"){
             steps {
-                echo "heyy "
                 // ls
                 sh "chmod +x general.sh"
                 sh "./general.sh Build"
